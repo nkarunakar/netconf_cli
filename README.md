@@ -37,16 +37,14 @@ optional arguments:
                         Specify get or getconfig calls
  ```
  
- ### Various options supported:
- ---
+### Options supported:
+---
 
 #### 1. -A & -m or –-method options:
 
 -A -> Option when used will download All yangs from NETCONF supported node, yangs will be placed in a folder with name same as Node IP address.
 
 *For example:*
-
----
 
 ```C:\NETCONF>python netconf_cli.py 172.16.14.34 adminuser admin123 -A```
 
@@ -56,8 +54,6 @@ Also, we can use -m option along with -A to perform either get/getconfig operati
 
 *For example:*
 
----
-
 ```C:\NETCONF>python netconf_cli.py 172.16.14.34 adminuser admin123 -A -m get```
 
 Above command will download supported yangs from NE in C:\NETCONF\172.16.14.34 folder & perform a GET operation on the same, if data is available the same will be placed in a XML file in C:\NETCONF\172.16.14.34 folder.
@@ -66,13 +62,13 @@ Above command will download supported yangs from NE in C:\NETCONF\172.16.14.34 f
 
 Above command will download supported yangs from NE in C:\NETCONF\172.16.14.34 folder & perform a GET-CONFIG operation on the same, if data is available the same will be placed in a XML file in C:\NETCONF\172.16.14.34 folder.
 
+---
+
 #### 2. -p or --path option & -m or –-method options:
 
 We can also use -p option to specify a single yang file & perform either get or getconfig operation.
 
 *For example:*
-
----
 
 ```C:\NETCONF>python netconf_cli.py 172.16.14.34 adminuser admin123 -p C:\MyYang\sample.yang -m get```
 
@@ -85,8 +81,6 @@ Above command will perform a GET-CONFIG operation for sample.yang & place result
 Alternatively, when a directory is passed to -p or –path option, then any operation specified by -m or --method option will be performed on all available yangs in the directory  
 *For example:*
 
----
-
  ```C:\NETCONF>python netconf_cli.py 172.16.14.34 adminuser admin123 -p C:\MyYang\ -m get```
  
 Above command will perform a GET operation for all available YANGS in C:\MyYang\ folder & place results in working folder in form of XML in same folder.
@@ -95,27 +89,25 @@ Above command will perform a GET operation for all available YANGS in C:\MyYang\
  
 Above command will perform a GETCONFIG operation for all available YANGS in C:\MyYang\ folder & place results in working folder in form of XML in same folder.
 
+---
+
 #### 3. -F or --fullconfig options:
 
 We can use -F option to perform ROOT level get/get-config operation NETCONF supported nodes.
 
 *For example:*
 
----
-
 ```C:\New folder\NETCONF>python netconf_cli.py 172.16.14.34 adminuser adminpassword123 -F get```
 
 Above command will perform get/get-config operation on ROOT node of device & place results in working folder in form of XML file.
 
-#### 4. No options specified:
-
 ---
+
+#### 4. No options specified:
 
 When no options is provided, it connects to given node & prints capabilities only.
 
 *For example:*
-
----
 
 ```C:\NETCONF>python netconf_cli.py 172.16.14.34 adminuser admin123```
 
