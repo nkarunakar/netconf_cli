@@ -1,12 +1,15 @@
 # Command line tool to execute NETCONF get calls using ncclient. 
 
-An automated python script for execution of NETCONF get/getconfig calls *(on specified yangs, All yangs, ROOT node)*,collect all supported YANG files & print capabilities.
+An automated python 3 script for execution of NETCONF get/getconfig calls *(on specified yangs, All yangs, ROOT node)*,collect all supported YANG files & print capabilities.
 
 ## REQUIREMENTS:
 ***
 ncclient==0.6.7
 
 lxml==4.5.2
+
+python==3.8.5
+
 
 ## Usage is as below
 ---
