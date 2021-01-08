@@ -104,7 +104,7 @@ We can use -F option to perform ROOT level get/get-config operation NETCONF supp
 
 Above command will perform get/get-config operation on ROOT node of device & place results in working folder in form of XML file.
 
-### 4. No options specified:
+#### 4. No options specified:
 
 ---
 
@@ -119,4 +119,4 @@ When no options is provided, it connects to given node & prints capabilities onl
 Above command will connect to device & prints capabilities only.
 
 
-All operations will be logged in file ncrun.log in working directory, please check this file for any errors/exceptions or more details.
+All operations will be logged in file **ncrun.log** in working directory, please check this file for any errors/exceptions or more details.
