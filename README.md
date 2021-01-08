@@ -113,5 +113,6 @@ When no options is provided, it connects to given node & prints capabilities onl
 
 Above command will connect to device & prints capabilities only.
 
+### Logging:
 
 All operations will be logged in file **ncrun.log** in working directory, please check this file for any errors/exceptions or more details.
